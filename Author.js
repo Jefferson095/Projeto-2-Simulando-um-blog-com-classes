@@ -1,9 +1,4 @@
-
-Author.js
-
 const Post = require('./Post')
-
-
 
 
 class Author{
