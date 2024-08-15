@@ -1,15 +1,8 @@
-index.js
-
-
-
-
 const Comment = require('./Comment')
 
 const Author = require('./Author')
 
 const Post = require('./Post')
-
-
 
 
 const author1 = new Author(
@@ -19,8 +12,6 @@ const author1 = new Author(
 )
 
 
-
-
 const post1 = new Post(
 
     'Título do post de Jefferson ', 'Conteúdo do post e Jefferson',
@@ -28,12 +19,6 @@ const post1 = new Post(
     author1
 
 )
-
-
-
-
-
-
 
 
 const comment1 = new Comment(
