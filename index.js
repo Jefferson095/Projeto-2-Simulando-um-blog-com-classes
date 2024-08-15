@@ -43,3 +43,5 @@ post1.addComment(comment2)
 console.log(author1)
 
 console.log(post1)
+console.log (comment1)
+console.log(comment2)
