@@ -1,47 +1,14 @@
-const Comment = require('./Comment')
-
 const Author = require('./Author')
 
-const Post = require('./Post')
+// Criando o autor
+const john = new Author('John Wick')
 
+// Criando uma postagem
+const post = john.createPost('As crônicas de John Wick', 'bla bla bla bla')
 
-const author1 = new Author(
+// Criando comentários
+post.addComments('Sopa', 'Eu amo as crônicas do cara aí')
+post.addComments('Alan', 'Eu odeio as crônicas desse cara muito feio!')
 
-    'Jefferson',
-
-)
-
-
-const post1 = new Post(
-
-    'Título do post de Jefferson ', 'Conteúdo do post e Jefferson',
-
-    author1
-
-)
-
-
-const comment1 = new Comment(
-
-    'Paulo', 'Que legal!'
-
-)
-
-
-const comment2 = new Comment(
-
-    'Jonas', 'Você de novo por aqui.'
-
-)
-
-author1.addPost(post1)
-
-post1.addComment(comment1)
-
-post1.addComment(comment2)
-
-console.log(author1)
-
-console.log(post1)
-console.log (comment1)
-console.log(comment2)
+console.log(john)
+console.log(post)
